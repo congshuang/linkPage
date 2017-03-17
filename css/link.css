@@ -1,0 +1,387 @@
+/**
+ * title:"链接查询部分的css"
+ * Author:allenzjw
+ * Time:3/13
+ */
+body{
+    font-size: 16px;
+    background: #fff;
+    position:relative;
+}
+/*================================
+表单 表格整体部分
+==================================*/ 
+.link-content{
+	padding:10px 10px 0;
+	min-width:1200px;
+    overflow: auto;
+}
+/*================================
+表头部分
+ */ 
+.link-content>span{
+    display: inline-block;
+    width: 150px;
+    padding: 3px 0px 5px 12px;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(63,185,191);
+}
+
+.link-content>p,.ZDYBT{
+    margin-top: 10px;
+}
+.link-content>p>span,.ZDYBT{
+    color: rgb(63,185,191);
+    cursor: pointer;
+}
+/*===============================
+查询表单部分
+*/
+.link-content .searchForm{
+    height: 160px;
+    border: 1px solid #DEDEDF;
+    margin-bottom:15px;
+    background: #fff;
+}
+.link-content .searchForm{
+    margin-left: 3%;
+    padding: 9px 1%;
+}
+.layui-form-label{
+    margin-left: 10px;
+    width: 100px;
+}
+.link-content .searchFormTop,.searchFormMiddle{
+    width: 100%;
+    height: 48px;
+    padding-top: 10px;
+}
+.link-content .searchFormTop .layui-input-inline,.searchFormMiddle .layui-input-inline{
+    width: 20%;
+}
+.timeInput{
+    width: 9%!important;
+    margin: 0!important;
+}
+.layui-form-mid{
+    width: 2%!important;
+    margin: 0!important;
+    text-align: center;
+}
+/*===============================
+重置 查询按钮
+*/ 
+.link-content .searchFormBtn{
+    height: 35px;
+    line-height: 35px;
+    float: right;
+    margin-right: 45px;
+    width: 80px;
+    border-radius: 8px;
+}
+/*===============================
+投诉信息查询结果表格
+*/
+.link-content .layui-table thead tr th,
+.link-content .layui-table tbody tr td{
+	word-break:break-all;
+    text-align: center;
+    padding:10px 5px;
+}
+.link-content .layui-table tbody tr td{
+    font-size: 16px;
+    color: rgb(102,101,101);
+    font-weight: 500;
+}
+.link-content .layui-table thead tr th{
+    padding:0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.link-content .ljTable{
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid #DEDEDF;
+    border-bottom-width: 1px;
+}
+.link-content .ljTable thead tr{
+    background: none;
+}
+.link-content .ljTable thead tr th:first-child{
+	padding:0 10px;
+	min-width: 32px;
+}
+.link-content .ljTable tbody tr td{
+	font-size:14px;
+}
+/*============================
+时间input框
+*/
+.link-content .timeInput>input{
+    height: 38px!important;
+}
+/*============================
+操作
+============================== */ 
+.handelClick{
+    display: inline-block;
+    cursor: pointer;
+}
+.detailsClick{
+    color: #F1817F;
+}
+.modifyClick{
+    margin: 0 20px;
+    color: #51C1C2;
+}
+.signClick{
+    color: #51C1C2;
+}
+
+/*============================
+分页器
+ */ 
+.link-content .pager{
+    float: right;
+}
+/*============================
+处理 弹出层内容样式
+==============================*/
+body .CLYM-style .layui-layer-title{
+    color: #f8f8f8;
+    background-color: #51C1C2;
+}
+
+/*============================
+各个弹出框的样式
+==============================*/
+.box{
+    position: absolute;
+    left:50%;
+    top:50%;
+    background:#FFF;
+    border:1px solid #ccc;
+    z-index: 3;
+}
+.boxTop{
+    width: 100%;
+    height: 35px;
+    background: #51C1C2;
+    color: #f8f8f8;
+}
+.boxTop>span{
+    line-height: 35px;
+    padding-left: 20px;
+}
+.boxContent{
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.cancel{
+    float: right;
+    margin: 8px 20px 0 0;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.cancel:hover{
+    cursor: pointer;
+    background: cadetblue;
+}
+/*==========================
+遮罩层
+============================*/
+.hui{
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+/*==============================
+changeTitle样式
+================================*/
+.changeTitle-wrap{
+    width: 490px;
+    height: 265px;
+    margin-top: -132px;
+    margin-left: -245px;
+    box-sizing: border-box;
+}
+.changeTitle-wrap .addListHeader{
+    overflow:hidden;
+}
+.changeTitle-wrap .addListHeader li{
+    float: left;
+    width: 128px;
+    height: 30px;
+    margin: 12px 15px;
+    border: 1px dashed #ccc;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.changeTitle-wrap .addListHeader li .layui-icon{
+    margin-left: 10px;
+    opacity: .6;
+}
+.changeTitle-wrap .buttonArea{
+    text-align: right;
+    padding-right: 25px;
+}
+.changeTitle-wrap .buttonArea button{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*==============================
+sign样式
+================================*/
+.sign-wrap{
+    width: 500px;
+    height: 265px;
+    margin-top: -132px;
+    margin-left: -250px;
+    box-sizing: border-box;
+}
+.sign-wrap .layui-form-item:nth-child(1){
+    margin-bottom: 0!important;
+}
+/*=========================
+备注
+*/
+.sign-wrap p{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 50px;
+}
+.sign-wrap .layui-textarea{
+    float: right;
+    margin-right: 60px;
+}
+.sign-wrap .buttonArea{
+    text-align: right;
+    padding-right: 60px;
+}
+.sign-wrap .layui-btn{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/*==============================
+modifyDetails样式
+================================*/
+.modifyDetails-wrap{
+    width: 830px;
+    height: 310px;
+    margin-top: -155px;
+    margin-left: -415px;
+    box-sizing: border-box;
+}
+.modifyDetails-wrap .boxContent{
+    padding: 30px 35px;
+}
+.modifyDetails-wrap .layui-form-lable{
+    float: left;
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    padding-right: 20px;
+    text-align: right;
+}
+.modifyDetails-wrap .layui-input-inline{
+    width: 260px;
+}
+.modifyDetails-wrap .buttonArea{
+    padding-right: 30px;
+    text-align: right;
+}
+.modifyDetails-wrap .buttonArea button{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+}
+.modifyDetails-wrap .case-time{
+    height: 38px;
+}
+
+/*==============================
+accountDetails样式
+================================*/
+.accountDetails-wrap{
+    width: 950px;
+    height: 560px;
+    margin-top: -280px;
+    margin-left: -475px;
+    box-sizing: border-box;
+}
+.accountDetails-wrap .boxContent{
+    padding: 25px 30px;
+}
+.accountDetails-wrap .content-box{
+    width: 100%;
+    height: 180px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.accountDetails-wrap .content-title{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+}
+.accountDetails-wrap span{
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.accountDetails-wrap .content-title a{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 50%;
+    color: red;
+}
+.accountDetails-wrap .content-title span.active{
+    color: #51C1C2;
+    border-bottom: 1px solid #51C1C2;
+}
+.accountDetails-wrap .layui-form-lable{
+    float: left;
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    padding-right: 20px;
+    text-align: right;
+}
+.accountDetails-wrap .layui-input-inline{
+    width: 288px;
+}
